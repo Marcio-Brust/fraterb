@@ -14,7 +14,7 @@ export const OutSideClick = ({ setIsVisible }: OutsideProp) => {
     const button = html.querySelector("button");
     if (target !== ul && target !== span && target !== button) {
       setIsVisible(false);
-      window.removeEventListener("click", handleClick);
+      if (isBrowser()) window.removeEventListener("click", handleClick);
     }
   }
   if (isBrowser()) window.addEventListener("click", handleClick);

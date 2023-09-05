@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Seasons } from "@/Ultils/Hooks/FakeApi";
-import { Data } from "@/Ultils/Hooks/FakeApi";
+import { Data, Seasons } from "@/Ultils/Hooks/FakeApi";
 import ak47 from "../../../public/assets/Image/ak-47.png";
 import player from "../../../public/assets/Image/palyer.png";
 import skull from "../../../public/assets/Image/caveira.png";
@@ -13,8 +12,6 @@ import eu from "../../../public/assets/Image/fotoTest.jpeg";
 import Image from "next/image";
 
 export const BodyRanking = () => {
-
-  
   const [search, setSearch] = useState("");
 
   const filteredRepos =

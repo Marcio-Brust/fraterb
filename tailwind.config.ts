@@ -36,6 +36,7 @@ const config: Config = {
         Myheigth: "100px",
         hhover: "8px",
         hbtnspan: "2px",
+        hplay: "450px",
       },
       maxHeight: {
         celHeight: "40px",
@@ -63,12 +64,23 @@ const config: Config = {
       },
       animation: {
         showRigth: "showRigth 0.3s ease-in-out forwards",
+        pulse: "pulse 0.7s ease-in-out infinite",
       },
 
       keyframes: {
         showRigth: {
           from: { "margin-top": "-200px" },
           to: { "margin-top": "188px" },
+        },
+        pulse: {
+          "0%": {
+            "-webkit-transform": "scale(1)",
+            "-webkit-filter": "brightness(100%)",
+          },
+          "100%": {
+            "-webkit-transform": "scale(1)",
+            "-webkit-filter": "brightness(200%)",
+          },
         },
       },
       screens: {

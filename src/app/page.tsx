@@ -7,9 +7,6 @@ import inferno from "../../public/assets/Image/mapaInferno.jpeg";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [segundo, setSegundo] = useState(0);
-  const [milesimo, setMilesimo] = useState(0);
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <section className="w-full bg-bgprimary bg-opacity-90 h-hplay text-primary -mt-24 absolute   grid items-center justify-center ">

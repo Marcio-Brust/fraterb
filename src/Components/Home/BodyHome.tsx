@@ -9,7 +9,7 @@ import useMedia from "@/Ultils/Hooks/useMedia";
 
 export const BodyHome = () => {
   const [closed, setClosed] = useState(true);
-  const mobile = useMedia("(max-width:65rem)");
+  const mobile = useMedia("(max-width:75rem)");
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -23,13 +23,13 @@ export const BodyHome = () => {
           <h1 className="text-red-600 text-2xl animate-pulse">Ao vivo</h1>
           <p className="text-base text-primary ">00:00:00</p>
         </div>
-        <div className="flex  max-desktopsmall:grid items-center  max-desktopsmall:gap-4  gap-7 justify-between">
+        <div className="flex  max-desktop:grid items-center  max-desktop:gap-4  gap-7 justify-between">
           <div
-            className={`grid max-desktopsmall:gap-2 gap-6  ${
+            className={`grid max-desktop:gap-2 gap-6  ${
               mobile ? "justify-items-center" : "justify-items-end"
             }`}
           >
-            <div className="flex items-center  max-desktopsmall:gap-2 gap-5 ">
+            <div className="flex items-center  max-desktop:gap-2 gap-5 ">
               {mobile ? (
                 <>
                   <Image
@@ -39,13 +39,13 @@ export const BodyHome = () => {
                     priority={true}
                     alt="contra_terrorista"
                   />{" "}
-                  <p className="text-lg max-desktopsmall:text-sm">
+                  <p className="text-lg max-desktop:text-sm">
                     Contra terrorista
                   </p>
                 </>
               ) : (
                 <>
-                  <p className="text-lg max-desktopsmall:text-sm">
+                  <p className="text-lg max-desktop:text-sm">
                     Contra terrorista
                   </p>
                   <Image
@@ -58,7 +58,7 @@ export const BodyHome = () => {
                 </>
               )}
             </div>
-            <h1 className="text-4xl font-medium max-desktopsmall:text-base ">
+            <h1 className="text-4xl font-medium max-desktop:text-base ">
               Team Tibau
             </h1>
             <div className="flex items-center gap-1">
@@ -115,7 +115,7 @@ export const BodyHome = () => {
             </div>
           </div>
           <main className="text-center mt-2">
-            <h1 className="text-4xl font-bold mb-3 max-desktopsmall:text-lg">
+            <h1 className="text-4xl font-bold mb-3 max-desktop:text-lg">
               Mapa Inferno
             </h1>
             <div>
@@ -129,11 +129,11 @@ export const BodyHome = () => {
             </div>
           </main>
           <div
-            className={`grid max-desktopsmall:gap-2 gap-6  ${
+            className={`grid max-desktop:gap-2 gap-6  ${
               mobile ? "justify-items-center" : "justify-items-start"
             }`}
           >
-            <div className="flex items-center  max-desktopsmall:gap-2 gap-5">
+            <div className="flex items-center  max-desktop:gap-2 gap-5">
               <Image
                 className="rounded-full "
                 src={tr}
@@ -141,9 +141,9 @@ export const BodyHome = () => {
                 priority={true}
                 alt="terrorista"
               />
-              <p className="text-lg max-desktopsmall:text-sm">Terrorista</p>
+              <p className="text-lg max-desktop:text-sm">Terrorista</p>
             </div>
-            <h1 className="text-4xl font-medium max-desktopsmall:text-base">
+            <h1 className="text-4xl font-medium max-desktop:text-base">
               Team Jamal
             </h1>
             <div className="flex items-center gap-1">
@@ -207,7 +207,9 @@ export const BodyHome = () => {
           closed ? "animate-closedbtn" : "animate-openbtn"
         }`}
       >
-        {closed ? "Abrir" : "Fechar"}
+        <p className={`${closed ? "animate-pulse text-red-600" : ""} `}>
+          {closed ? "Ao vivo" : "Fechar"}
+        </p>
       </button>
     </main>
   );

@@ -49,6 +49,7 @@ const config: Config = {
         hoverMarginTop: "7px",
         btnSpanTop: "5px",
         ulTop: "188px",
+        aovivo: "-534px",
       },
 
       padding: {
@@ -65,6 +66,9 @@ const config: Config = {
       animation: {
         showRigth: "showRigth 0.3s ease-in-out forwards",
         pulse: "pulse 0.7s ease-in-out infinite",
+
+        open: "open 0.3s ease-in-out forwards",
+        openbtn: "openbtn 0.3s ease-in-out forwards",
       },
 
       keyframes: {
@@ -80,6 +84,20 @@ const config: Config = {
           "100%": {
             "-webkit-transform": "scale(1)",
             "-webkit-filter": "brightness(200%)",
+          },
+        },
+
+        open: {
+          from: {
+            "margin-top": "-534px",
+          },
+          to: {
+            "margin-top": "-96px",
+          },
+        },
+        openbtn: {
+          to: {
+            "margin-top": "438px",
           },
         },
       },

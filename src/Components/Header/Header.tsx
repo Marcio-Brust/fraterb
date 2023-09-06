@@ -21,7 +21,7 @@ export const Header = () => {
   }, [mobile]);
 
   return (
-    <header className="h-Myheigth w-full flex justify-center items-center bg-bgprimary">
+    <header className="h-Myheigth w-full flex justify-center items-center bg-bgprimary ">
       <nav className="  flex justify-between items-center max-w-myWidth w-full ml-5 mr-5">
         <div>
           <Image src={logo} alt="logo" width={100} priority={true} />

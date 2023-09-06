@@ -14,9 +14,9 @@ export const BodyHome = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <section
-        className={`  after:absolute after:w-24 after:h-9 a   w-full bg-bgprimary bg-opacity-90 h-hplay text-primary  absolute mt-aovivo
-        grid items-center justify-center  ${
-          closed ? "-z-10 after:hidden" : "animate-open z-0 "
+        className={`  after:absolute after:w-24 after:h-9    w-full bg-bgprimary bg-opacity-90 h-hplay text-primary  absolute mt-aovivo
+        ${closed ? "hidden" : "grid"}  items-center justify-center  ${
+          closed ? "-z-10 " : "animate-open z-0  "
         }      duration-transitionDuration`}
       >
         <div className="flex  items-center justify-center gap-5 ">
@@ -203,7 +203,7 @@ export const BodyHome = () => {
       </section>
       <button
         onClick={() => setClosed(!closed)}
-        className={`absolute right-0 w-24 h-9 rounded-sm text-primary border-none top-28 bg-bgprimary duration-transitionDuration ${
+        className={`absolute right-0 w-24 h-9 rounded-sm text-primary border-none top-24 bg-bgprimary duration-transitionDuration border-primary ${
           closed ? "animate-closedbtn" : "animate-openbtn"
         }`}
       >

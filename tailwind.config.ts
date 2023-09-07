@@ -18,6 +18,9 @@ const config: Config = {
         bgprimary: "#161415",
         bgsecondary: "#555",
       },
+      opacity: {
+        "96": "0.96",
+      },
       gridTemplateRows: {
         main: "100px auto 650px",
       },

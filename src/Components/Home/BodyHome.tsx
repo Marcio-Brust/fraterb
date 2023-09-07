@@ -14,7 +14,7 @@ export const BodyHome = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between bg-bgprimary bg-opacity-80">
       <section
-        className={`  after:absolute after:w-24 after:h-9    w-full bg-bgprimary  h-hplay text-primary  absolute top-48 bg-opacity-96
+        className={`  after:absolute after:w-24 after:h-9    w-full bg-bgprimary  h-hplay text-primary  absolute top-48 
         ${closed ? "hidden" : "grid"}  items-center justify-center  ${
           closed ? "-z-10 " : "animate-open z-10  "
         }      duration-transitionDuration`}
@@ -212,7 +212,7 @@ export const BodyHome = () => {
         </p>
       </button>
       <div className="grid gap-10 text-primary mt-12 p-10">
-        <div className="flex  border-bgsecondary border-b  max-desktop:grid items-center  max-desktop:gap-4  gap-7 justify-between">
+        <div className="flex   p-5 border-b  max-desktop:grid items-center  max-desktop:gap-4  gap-7 justify-between">
           <div
             className={`grid max-desktop:gap-2 gap-6  ${
               mobile ? "justify-items-center" : "justify-items-end"
@@ -390,7 +390,7 @@ export const BodyHome = () => {
             </div>
           </div>
         </div>
-        <div className="flex  max-desktop:grid items-center  max-desktop:gap-4  gap-7 justify-between border-bgsecondary border-b">
+        <div className="flex  max-desktop:grid items-center  max-desktop:gap-4  gap-7 justify-between  p-5 border-b">
           <div
             className={`grid max-desktop:gap-2 gap-6  ${
               mobile ? "justify-items-center" : "justify-items-end"
@@ -568,7 +568,7 @@ export const BodyHome = () => {
             </div>
           </div>
         </div>
-        <div className="flex  max-desktop:grid items-center  max-desktop:gap-4  gap-7 justify-between border-bgsecondary border-b">
+        <div className="flex  max-desktop:grid items-center  max-desktop:gap-4  gap-7 justify-between  p-5 border-b">
           <div
             className={`grid max-desktop:gap-2 gap-6  ${
               mobile ? "justify-items-center" : "justify-items-end"
@@ -746,7 +746,7 @@ export const BodyHome = () => {
             </div>
           </div>
         </div>
-        <div className="flex  max-desktop:grid items-center  max-desktop:gap-4  gap-7 justify-between border-bgsecondary border-b">
+        <div className="flex  max-desktop:grid items-center  max-desktop:gap-4  gap-7 justify-between  p-5 border-b">
           <div
             className={`grid max-desktop:gap-2 gap-6  ${
               mobile ? "justify-items-center" : "justify-items-end"

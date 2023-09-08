@@ -5,6 +5,10 @@ import ct from "../../../public/assets/Image/contraTerrorista.png";
 import tr from "../../../public/assets/Image/terrorista.jpg";
 import player from "../../../public/assets/Image/palyer.png";
 import inferno from "../../../public/assets/Image/mapaInferno.jpeg";
+import overpass from "../../../public/assets/Image/overpass.webp";
+import mirage from "../../../public/assets/Image/600px-Csgo_mirage.jpg";
+import cache from "../../../public/assets/Image/cache.jpeg";
+import dust from "../../../public/assets/Image/dust2.webp";
 import useMedia from "@/Ultils/Hooks/useMedia";
 
 export const BodyHome = () => {
@@ -305,12 +309,12 @@ export const BodyHome = () => {
           </div>
           <main className="text-center mt-2">
             <h1 className="text-4xl font-bold mb-3 max-desktop:text-lg">
-              Mapa Inferno
+              Mapa Overpass
             </h1>
             <div>
               <Image
                 className="brightness-50"
-                src={inferno}
+                src={overpass}
                 width={mobile ? 200 : 500}
                 priority={true}
                 alt="mapa"
@@ -483,12 +487,12 @@ export const BodyHome = () => {
           </div>
           <main className="text-center mt-2">
             <h1 className="text-4xl font-bold mb-3 max-desktop:text-lg">
-              Mapa Inferno
+              Mapa DustII
             </h1>
             <div>
               <Image
                 className="brightness-50"
-                src={inferno}
+                src={dust}
                 width={mobile ? 200 : 500}
                 priority={true}
                 alt="mapa"
@@ -661,12 +665,12 @@ export const BodyHome = () => {
           </div>
           <main className="text-center mt-2">
             <h1 className="text-4xl font-bold mb-3 max-desktop:text-lg">
-              Mapa Inferno
+              Mapa Cache
             </h1>
             <div>
               <Image
                 className="brightness-50"
-                src={inferno}
+                src={cache}
                 width={mobile ? 200 : 500}
                 priority={true}
                 alt="mapa"
@@ -839,12 +843,12 @@ export const BodyHome = () => {
           </div>
           <main className="text-center mt-2">
             <h1 className="text-4xl font-bold mb-3 max-desktop:text-lg">
-              Mapa Inferno
+              Mapa Mirage
             </h1>
             <div>
               <Image
                 className="brightness-50"
-                src={inferno}
+                src={mirage}
                 width={mobile ? 200 : 500}
                 priority={true}
                 alt="mapa"
